@@ -4,7 +4,6 @@
 /backend/node_modules
 
 # Production
-/frontend/build
 
 # Logs
 npm-debug.log*
