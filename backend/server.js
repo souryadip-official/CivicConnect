@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+
 const userRoutes = require('./routes/userRoutes');
 const announcementRoutes = require('./routes/announcementRoutes');
 const complaintRoutes = require('./routes/complaintRoutes');
@@ -12,10 +14,9 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 
-// ✅ Mount routes correctly
 app.use('/api/users', userRoutes);
 app.use('/api/announcements', announcementRoutes);
 app.use('/api/complaints', complaintRoutes);

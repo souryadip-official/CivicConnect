@@ -1,7 +1,7 @@
 // src/pages/AdminDashboardPage.js
 
 import React, { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
+import axios from '../api';
 import { AuthContext } from '../context/AuthContext';
 import Loader from '../components/Loader';
 import ComplaintDetailsModal from '../components/ComplaintDetailsModal';

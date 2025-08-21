@@ -90,14 +90,11 @@ const AppContent = () => {
 };
 
 function App() {
-  // --- THIS IS THE FIX ---
-  // The initial loading check is now restored.
   const { loading } = useContext(AuthContext);
 
   if (loading) {
     return <Loader />;
   }
-  // --- END OF FIX ---
 
   return (
     <Router>

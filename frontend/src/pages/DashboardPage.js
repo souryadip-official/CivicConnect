@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useContext, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../api';
 import { AuthContext } from '../context/AuthContext';
 import Loader from '../components/Loader';
 import UserComplaintModal from '../components/UserComplaintModal';
