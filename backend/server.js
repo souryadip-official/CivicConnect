@@ -22,7 +22,7 @@ app.use('/api/announcements', announcementRoutes);
 app.use('/api/complaints', complaintRoutes);
 app.use('/api/organizations', organizationRoutes);
 app.use('/api/upload', uploadRoutes);
-app.use('/api/admin', userAdminRoutes);
+app.use('/api/users/admin', userAdminRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

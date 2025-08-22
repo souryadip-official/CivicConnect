@@ -1,6 +1,7 @@
 // frontend/src/pages/HomePage.js
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 // --- Reusable Component for Feature Cards ---
 const FeatureCard = ({ icon, title, children }) => (
@@ -64,9 +65,9 @@ const HomePage = () => {
                 CivicConnect is the digital platform bridging the gap between residents and rural governance. Report issues, track complaints, and collaborate to build a transparent, efficient, and brighter future for your community.
               </p>
               <div className="mt-10">
-                <a href="/register" className="px-8 py-3 text-base font-bold text-white transition-all duration-300 transform bg-teal-500 rounded-lg shadow-xl sm:px-10 sm:py-4 sm:text-lg shadow-teal-500/30 hover:scale-105 hover:bg-teal-600">
+                <Link to="/register" className="px-8 py-3 text-base font-bold text-white transition-all duration-300 transform bg-teal-500 rounded-lg shadow-xl sm:px-10 sm:py-4 sm:text-lg shadow-teal-500/30 hover:scale-105 hover:bg-teal-600">
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -149,9 +150,9 @@ const HomePage = () => {
             Sign in to your dashboard to report a new issue or track the progress of your existing complaints.
           </p>
           <div className="mt-8">
-            <a href="/login" className="px-8 py-3 text-base font-bold text-teal-600 transition-transform duration-300 transform bg-white rounded-lg shadow-xl sm:px-10 sm:py-4 sm:text-lg hover:scale-105">
+            <Link to="/login" className="px-8 py-3 text-base font-bold text-teal-600 transition-transform duration-300 transform bg-white rounded-lg shadow-xl sm:px-10 sm:py-4 sm:text-lg hover:scale-105">
               Login to Your Account
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -16,7 +16,6 @@ const getResidents = asyncHandler(async (req, res) => {
     throw new Error('Admin user is not associated with any rural body.');
   }
 
-  // FIXED: Ensure we are querying with a proper MongoDB ObjectId
   const ruralBodyObjectId = new mongoose.Types.ObjectId(adminUser.ruralBodyId);
 
   const residents = await User.find({
